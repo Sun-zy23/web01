@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(17, 182, 182);
+    }
+    .wrapper{
+        background-color: darkslateblue;
+        height: 300px;
+        width: 700px;
+        margin-top: 200px;
+        margin: 150px;
+       /* margin: 300px上 300px右 300px下 300px左
+        margin-top: 300px;
+        margin-right:300px; 
+        margin-bottom:300px;
+        margin-left:300px;*/
+    }
+    .parent1{
+        background-color:gold;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 30px;
+        position:relative;
+    }
+    .parent2{
+        background-color:rgb(243, 67, 161);
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+        margin: 30px;
+    }
+    .son1{
+        background-color: rgb(37, 221, 77);
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 20px;
+    }
+    .son2{
+        background-color: rgb(206, 37, 221);
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top:20px;
+    }
+</style>
+<body>
+    <div class="wrapper">
+    <div class="parent1">
+        <div class="son1"></div>
+    </div>
+    <div class="parent2">
+        <div class="son2"></div>
+    </div>
+    </div>
+</body>
+</html>

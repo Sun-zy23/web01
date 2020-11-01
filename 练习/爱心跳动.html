@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱心跳动</title>
+    <style>
+        body{
+            margin: 0;/*外边距*/
+            padding: 0;/*内边距*/
+        }
+        .love{
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            /*第一个是上下，第二个是左右，auto默认左右居中
+            transform: scale(1.2);
+           放大缩小，以1为标准*/
+           animation: move 1s linear infinite alternate;
+           /* 名字 时长 运动轨迹 次数 方向*/
+           /* ease 慢 快 */
+        }
+        /*自定义动画*/
+        @keyframes move {
+            0%{
+                transform: scale(1);
+                /*不改变*/
+            }
+            50%{
+                transform:scale(1.2);
+                /*放大*/
+            }
+            100%{
+                transform: scale(1);
+                /*还原*/
+            }
+        }
+        .left{
+            width: 150px;
+            height: 240px;
+            background-color: red;
+            float: left;
+            border-radius: 75px 75px 0px 0px;
+            transform: rotate(-45deg);
+            box-shadow: 0 0 40px red;
+            /*reansform控制旋转*，deg指角度
+            box-shadow 阴影(水平位移 垂直位移 宽度它的粗细 颜色)*/
+        }
+        .right{
+            width: 150px;
+            height: 240px;
+            background-color:red;
+           float: left;
+           border-radius: 75px 75px 0px 0px;
+           transform: rotate(45deg);
+           position: relative;
+           top: 0;
+           left: -86px;
+           box-shadow: 0 0 40px red;
+           /*圆角属性*/
+          
+        }
+    </style>
+</head>
+<body>
+  <div class="love">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+
+</body>
+</html>
